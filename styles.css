@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-principal: #000000;
+    --cor-secundaria:#22dffd;
+    --cor-terciaria:red;
+    --fonte-kronaone:"Krona One",sans-serif;
+    --fonte-montserrat: "Montserrat",sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+}  
+
+.cabecalho {
+    font-family: var(--fonte-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5% 15% 0;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_links {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 15%;
+    align-items: center;
+    gap: 82px;
+}
+
+.destaque1 {
+color: var(--cor-secundaria);
+}
+.linguagens {
+    color: var(--cor-terciaria)
+}
+
+.texto1 {
+    color: white;
+    font-family: var(--fonte-kronaone);
+    font-size: 2.25rem;
+}
+
+.texto2 {
+    color: white;
+    font-family: var(--fonte-montserrat);
+    font-size: 1.5rem;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+}
+
+.links {
+    border: 4px solid var(--cor-secundaria);
+    width: 50%;
+    font-family: var(--fonte-montserrat);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    padding: 21.5px 0;
+    
+}
+
+.esquerda {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo2 {
+    color: white;
+    font-family: var(--fonte-montserrat);
+    text-align: center;
+}  
+
+.icones {
+    vertical-align: middle;
+}
+
+.links:hover {
+    background-color: #272727;
+    border: 4px solid var(--cor-terciaria);
+}
+
+.ry {
+    font-family: var(--fonte-kronaone);
+}
+
+.conteudo_imagem {
+    width: 50%;
+}
+
+.rodape {
+    background-color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    font-family: var(--fonte-montserrat);
+    text-align: center;
+    color: var(--cor-principal);
+    padding: 24px;
+}
+
+.textopag2 {
+    color: white;
+    font-family: var(--fonte-montserrat);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+.cabecalho {
+    padding: 10%;
+}
+
+.cabecalho_menu {
+    justify-content: center;
+}
+
+    .conteudo {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .esquerda {
+        width: auto;
+    }
+}
+
+
+
